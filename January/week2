@@ -1,0 +1,83 @@
+# What is Git?
+<s>Git is a version control system that allows multiple developers to work on the same project simultaneously
+without stepping over each other's code. It keeps track of every change made to the code
+and who made those changes, making it easier for everyone to collaborate.</s>
+
+# Advantage of Git or Github?
+- **Tracking Changes**: Git helps you keep track of all the changes made in your
+codebase so you can always know what has been added, removed, or modified. This makes collaboration
+on projects much simpler and less prone to errors.
+- **Rollbacks**: If something goes wrong with your code, you can easily
+roll back to a previous state using Git’s powerful revert feature. This saves time and effort spent
+fixing mistakes and reduces the risk of introducing bugs into your codebase.
+- **Branching & Merging**: With Git, you can create separate branches for new
+features or bug fixes without affecting the main codebase. Once a feature is complete, you can
+merge it back into the main branch, ensuring that all the latest features are included in the final
+product. This also helps prevent conflicts between different versions of the same file.
+- **Hosting Services**: GitHub is an online platform where you can host your Git repositories.
+It provides additional features such as issue tracking, pull request management, and wikis, which make
+collaboration more efficient. You can invite others to contribute to your repository by sending them
+an invitation link. They will be able to access your code and submit their contributions through pull requests
+an invitation link via email. They will then be able to clone the repository, push their own
+commits, and submit pull requests for review.
+# How does Git Work?
+1. First, you need to install Git on your computer. There are various ways to do this
+- Download and install from git-scm.com (recommended)
+- Use the command line interface (CLI), available in most operating systems
+- Integrate Git into your text editor through plugins/extensions like SourceTree, SublimeMerge
+2. After installing Git, open your terminal (or command prompt). Navigate to the directory
+where you want to store your project files using the `cd` command. For example, if your
+project is called "my_app" and it's located in the "Documents" folder,
+you would type `cd Documents/my_app`.
+3. To start a new Git project, navigate to your project folder in the terminal and run the
+command `git init`. This creates a new ".git" subfolder in your project folder, containing
+all the necessary metadata for Git to function correctly.
+4. Next, you need to tell Git about any existing files in your project folder. Run the
+command `git add .` (Windows users should use `git add --all`) to stage all
+the files. Alternatively, you can stage individual files using `git add filename`,
+replacing "filename" with the name of the specific file you want to add.
+5. Now that the files are staged, you can commit them to the repository using the
+command `git commit -m "Your detailed message here"`. The `-m` flag allows you
+to include a brief description of the changes you made in quotes. Make sure to provide
+a meaningful summary of what was done in the commit message.
+6. Finally, you can push these commits to a remote repository, such as GitHub.
+Run `git remote add origin https://github.com/username/repo_name.git`
+(replace "username" with your actual GitHub username and "repo_name" with the name of
+your repository). Then, use `git push -u origin master` to upload your local
+changes to the remote repository. The `-u` flag sets up the "master" branch to
+be pushed to every time you perform a successful push operation.
+7. Other developers can now access your repository by cloning it using the following
+command: `git clone https://github.com/username/repo_name.git`. They
+will receive a copy of the entire repository and can work on it locally just like
+you did. When they have finished making changes, they can push those changes
+back to the remote repository.
+8. If someone else has already committed changes to a particular file while you were
+working on it, you may encounter merge conflicts. These occur when two people
+have made conflicting changes to the same part of a file. Git will indicate
+these conflicts by displaying sections of code with conflict markers ("<<<",
+">>>"). You can resolve these conflicts by editing the conflicted file and removing
+the conflict markers. Once you've fixed the conflicts, you can stage the resolved
+file again (`git add filename`). Then, you can commit the resolution.</s>
+stop for 1/08/2023
+
+
+
+How does git interact with Github
+What are the basic commands in Git?</s>
+Introduction to Git: Version Control System (VCS)
+What is version control system?
+Git commands 
+Pull request 
+Forking a repository
+Creating your own branch
+Making changes on your own branch
+Push and pull 
+Working environment 
+Merging branches
+Conflict resolution
+Tools for resolving conflicts.
+Reverting versions 
+Undoing commits
+Deleting files/folders from history
+Cleaning up untracked files
+
