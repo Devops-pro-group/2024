@@ -61,14 +61,41 @@ file again (`git add filename`). Then, you can commit the resolution.</s>
 stop for 1/08/2023
 
 
+# different between git pull & git fetch
+The difference between `git pull` and `git fetch` lies in their ability to integrate incoming
+commits from another repository and whether or not they automatically merge those commits
+into your current working tree.
+- `git fetch` only downloads the new commits without integrating them into your current
+branch. It’s like saying “I’m interested in what everyone else is doing” but
+without applying the changes to your own codebase.
+- On the other hand, `git pull` does both a `git fetch` and then a
+`git merge`. So if there are no conflicts between the branches being pulled
+from and yours, a `git pull` is equivalent to running both commands separately. 
 
-How does git interact with Github
+
+0                         1                     2
+remote repository        local repository      working area
+git fetch ------------------->git fetch 
+git pull ---------------------------------------->git pull 
+
+
+
 What are the basic commands in Git?</s>
+
 Introduction to Git: Version Control System (VCS)
 What is version control system?
-Git commands 
-Pull request 
+A VCS keeps track of all versions of a project as it evolves over time so that one
+can see what changes were made, who made them, and why they were made. This allows
+for collaboration among multiple users working on the same project simultaneously.
+
 Forking a repository
+When you want to work on something new that doesn't exist yet in the original
+repository, you create a fork of the repository. A fork is a copy of the repository
+that lives under your username. Any changes you make are done in your fork, not
+directly in the main repository. To contribute back your changes to the main
+repository, you must first "pull request" which is essentially asking the maintainers
+of the main repository to incorporate your changes.
+
 Creating your own branch
 Making changes on your own branch
 Push and pull 
